@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>exercice formulaire</title>
+</head>
+<body>
+    <form>
+    <h2>FORMULAIRE</h2>
+      <label for="nom">Nom<em>*</em></label>
+      <input id="nom" placeholder="Serre" autofocus required tabindex="1">
+      <p>
+      <label for="prénom">Prénom<em>*</em></label>
+      <input id="prénom" placeholder="Olivier" required tabindex="2">
+      </p>
+      <p>
+        Quelle est votre date de naissance ?<br/>
+        <input type="date" tabindex="3"/>
+      </p>
+      <p>
+        Sexe:<br/>     
+        <label for="masculin">Masculin</label>
+        <input type="checkbox" id="masculin"/>
+        <label for="féminin">Féminin</label>  
+        <input type="checkbox" id="féminin"/>
+        <label for="autre">Transgenre</label>
+        <input type="checkbox" id="autre" tabindex="4"/>
+      </p>
+      <p>
+        Avez-vous le permis ?<br> 
+        <input type="radio" name="sexe">Oui 
+        <input type="radio" name="sexe" tabindex="5">Non
+      </p>
+    <p>
+        <label for="nationalité">Quelle est votre nationalité ?</label>
+            <input type="checkbox" id="nationalité" tabindex="6">
+        <select>
+            <option value="France">France</option>
+            <option value="Espagnol">Espagnol</option>
+            <option value="Italien">Italien</option>
+            <option value="Allemand">Allemand</option>
+            </select>
+    <p>
+        Téléphone<br> 
+    <input id="telNo" name="telNo" type="tel" placeholder="01 23 45 67 89" tabindex="7">
+    </p>
+    <p>
+        <label for="email">Votre e-mail</label>
+        <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required tabindex="8">
+    <p>
+    <label for="pass">Entrez un mot de passe :</label>
+    <input type="password" id="pass" placeholder="monmotdepasse" required tabindex="9">
+    </p>
+    <p>
+        <button type="reset" value="reset">Reset</button>
+        <button type="submit" value="submit">Submit</button>
+    </p>
+</form>
+</body>
+</html>
